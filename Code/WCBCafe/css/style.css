@@ -120,12 +120,45 @@ footer p {
 
 /* 記事部分 */
 article {
-  width: 74%;
+  width: 60%;
+  order: 2;
+}
+article img {
+  margin-bottom: 20px;
+}
+article p {
+  margin-bottom: 1rem;
 }
 
 /* サイドバー */
 aside {
   width: 22%;
+  order: 3;
+}
+aside p {
+  padding: 12px 10px;
+}
+.sub-title {
+  font-size: 1.375rem;
+  padding: 0 8px 8px;
+  border-bottom: 2px #0bd solid;
+  font-weight: normal;
+}
+.sub-menu {
+  margin: 0 0 60px;
+  padding: 0;
+  list-style: none;
+}
+.sub-menu li {
+  border-bottom: 1px #ddd solid;
+}
+.sub-menu a {
+  color: #432;
+  padding: 10px 8px;
+  display: block;
+}
+.sub-menu a:hover {
+  color: #0bd;
 }
 
 .post-info {
@@ -161,4 +194,71 @@ aside {
 .post-title,
 .post-cat {
   margin-left: 120px;
+}
+
+.ad {
+  order: 1;
+}
+
+@media (max-width: 600px) {
+  .page-title {
+    font-size: 2.5rem;
+  }
+  .page-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Header */
+  .main-nav {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  .main-nav li {
+    margin: 0 20px;
+  }
+
+  /* Home */
+  .home-content {
+    margin-top: 20%;
+  }
+
+  /* News */
+  .news-contents {
+    flex-direction: column;
+  }
+  article,
+  aside {
+    width: 100%;
+  }
+
+  #news .page-title {
+    margin-top: 30px;
+  }
+  aside {
+    margin-top: 60px;
+  }
+  .post-info {
+    margin-bottom: 30px;
+  }
+  .post-date {
+    width: 70px;
+    height: 70px;
+    font-size: 1rem;
+  }
+  .post-date span {
+    font-size: 0.875rem;
+    padding-top: 2px;
+  }
+  .post-title {
+    font-size: 1.375rem;
+  }
+  .post-cat {
+    font-size: 0.875rem;
+    margin-top: 10px;
+  }
+  .post-title,
+  .post-cat {
+    margin-left: 80px;
+  }
 }
